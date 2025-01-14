@@ -27,7 +27,68 @@ Ensure you have the following installed:
    cd <repository-name>
 
 2. Install dependencies::
-  ```bash
-  npm install express typescript ts-node @types/node @types/express dotenv cors mongoose --save
-  npm install nodemon --save-dev
-  npm i ts-node-dev --save-dev
+   ```bash
+   npm install express typescript ts-node @types/node @types/express dotenv cors mongoose --save
+   npm install nodemon --save-dev
+   npm i ts-node-dev --save-dev
+
+3. Install dependencies::
+   ```bash
+   MONGO_URI=your-mongodb-uri
+   PORT=5000
+
+
+## Package.json Configuration
+
+Below is the `package.json` configuration for this project:
+
+```json
+{
+  "name": "y",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/server.js",
+    "dev": "ts-node-dev --respawn --transpile-only ./src/server.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.6",
+    "eslint-config-prettier": "^10.0.1",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "mongoose": "^8.9.5"
+  }
+}
+
+## Folder Structure
+
+Below is the folder structure of the project:
+
+├── src
+│   ├── ErrorHandlers
+│   │   ├── GlobalError.ts
+│   │   └── RouteError.ts
+│   ├── app.ts
+│   └── server.ts
+├── dist
+├── node_modules
+├── .env
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+└── README.md
