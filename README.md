@@ -39,23 +39,14 @@ Ensure you have the following installed:
 
 ## Folder Structure
 
-Below is the folder structure of the project:
-
-├── src
-│   ├── ErrorHandlers
-│   │   ├── GlobalError.ts
-│   │   └── RouteError.ts
-│   ├── app.ts
-│   └── server.ts
-├── dist
-├── node_modules
-├── .env
-├── .gitignore
-├── package.json
-├── package-lock.json
-├── tsconfig.json
+.
+├── build                   # Compiled files (alternatively `dist`)
+├── docs                    # Documentation files (alternatively `doc`)
+├── src                     # Source files (alternatively `lib` or `app`)
+├── test                    # Automated tests (alternatively `spec` or `tests`)
+├── tools                   # Tools and utilities
+├── LICENSE
 └── README.md
-
 ## Package.json Configuration
 
 Below is the `package.json` configuration for this project:
