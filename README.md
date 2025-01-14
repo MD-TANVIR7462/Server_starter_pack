@@ -25,3 +25,9 @@ Ensure you have the following installed:
    ```bash
    git clone <repository-url>
    cd <repository-name>
+
+2. Install dependencies::
+   ```bash
+  npm install express typescript ts-node @types/node @types/express dotenv cors mongoose --save
+  npm install nodemon --save-dev
+  npm i ts-node-dev --save-dev
