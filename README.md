@@ -37,6 +37,24 @@ Ensure you have the following installed:
    MONGO_URI=your-mongodb-uri
    PORT=5000
 
+## Folder Structure
+
+Below is the folder structure of the project:
+
+├── src
+│   ├── ErrorHandlers
+│   │   ├── GlobalError.ts
+│   │   └── RouteError.ts
+│   ├── app.ts
+│   └── server.ts
+├── dist
+├── node_modules
+├── .env
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+└── README.md
 
 ## Package.json Configuration
 
@@ -74,21 +92,3 @@ Below is the `package.json` configuration for this project:
   }
 }
 
-## Folder Structure
-
-Below is the folder structure of the project:
-
-├── src
-│   ├── ErrorHandlers
-│   │   ├── GlobalError.ts
-│   │   └── RouteError.ts
-│   ├── app.ts
-│   └── server.ts
-├── dist
-├── node_modules
-├── .env
-├── .gitignore
-├── package.json
-├── package-lock.json
-├── tsconfig.json
-└── README.md
